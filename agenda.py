@@ -7,12 +7,15 @@ while True:
     print('5 - Listar contatos')
     print('S - Sair')
     opcao = input('Digite a opção desejada: ').lower()
+
+    # Aqui adicionamos o contato a nossa agenda
     if opcao == '1':
         nome = input('Digite o nome do contato: ').lower()
         telefone = input('Digite o telefone do contato: ')
         agenda[nome] = telefone
         print('Contato salvo com sucesso!')
 
+    # Função para pesquisar contatos cadastrados
     elif opcao == '2':
         pesquisa = input('Digite o nome do contato: ').lower()
         if pesquisa in agenda:
@@ -20,6 +23,7 @@ while True:
         else:
             print('Digite uma entrada válida.')
 
+    # Função para pesquisa de contatos
     elif opcao == '3':
         alteracao = input('Digite o nome do contato a ser alterado: ').lower()
         if alteracao in agenda:
@@ -28,6 +32,7 @@ while True:
         else:
             print('Digite um contato válido.')
 
+    # Função para deletar contatos cadastrados
     elif opcao == '4':
             contato_deletar = input('Digite o nome do contato que deseja excluir: ').lower()
             if contato_deletar in agenda:
