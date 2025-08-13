@@ -23,7 +23,7 @@ while True:
         else:
             print('Digite uma entrada válida.')
 
-    # Função para pesquisa de contatos
+    # Função para alterar cadastro de contatos
     elif opcao == '3':
         alteracao = input('Digite o nome do contato a ser alterado: ').lower()
         if alteracao in agenda:
